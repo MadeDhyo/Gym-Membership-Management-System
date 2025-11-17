@@ -27,7 +27,7 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
     - name: Cek Syntax dan Kualitas Kode PHP
-      run: vendor/bin/phpcs src/ tests/
+      run: vendor/bin/phpcs admin/ pengguna/ *.php
 
     - name: Pekerjaan Selesai
       run: echo "Pemeriksaan Kode Berhasil! Siap untuk dipublikasikan."
